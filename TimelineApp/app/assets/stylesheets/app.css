@@ -1,24 +1,11 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- *= require foundation_and_overrides
-
- */
 
 h3 {
   font-size: 20px;
   color: #111;
+}
+
+li h3 {
+	display: block;
 }
 
 ul {
@@ -30,7 +17,7 @@ ul {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-border-radius: 10px
+  -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
 }
@@ -58,7 +45,7 @@ ul li ul {
   position: absolute;
   top: 48px;
   left: 0;
-  width: 150px;
+  width: 300px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -73,13 +60,13 @@ ul li ul {
 }
 ul li ul li {
   background: #555;
-  display: block;
+  display: inline-block;
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
 ul li ul li:hover { background: #666; }
 ul li:hover ul {
-  display: block;
+  display: inline-block;
   opacity: 1;
   visibility: visible;
 }
