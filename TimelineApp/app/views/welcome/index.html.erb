@@ -50,3 +50,28 @@
 	<div class="timeline">TIMELINE</div>
 	</div>
 </main>
+
+
+
+<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Candidates</button><br>
+<div class="circle"><a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">Candidates</a></div>
+
+<ul id="hover1" data-options="align:left" class="f-dropdown" data-dropdown-content>
+  <li><a href="#"><h3>Democrats</h3></a>
+  <li><a href="/candidates/1">Hillary Clinton</a></li>
+	<li>Jim Webb</li>
+	<li>Lincoln Chafee</li>
+	<li>Martin O'Malley</li>
+	<br>
+	<li><h3><a href="/candidates/<%= @republicans %>">Republicans</a></h3></li>
+	<li>Chris Christie</li>
+	<li>Jeb Bush</li>
+	<li>Marco Rubio</li>
+	<li><a href="/candidates/2">Rand Paul</a></li>
+	<li>Rick Perry</li>
+	<li>Scott Walker</li>
+	<li>Ted Cruz</li>
+	<br>
+	<li><h3>Independent</h3></li>
+	<li><a href="/candidates/3">Bernie Sanders</a></li>
+</ul>
