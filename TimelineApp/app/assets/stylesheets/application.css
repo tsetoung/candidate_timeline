@@ -84,11 +84,38 @@ ul li ul li {
   text-shadow: 0 -1px 0 #000;
 }
 
-
-
 ul li ul li:hover { background: #666; }
 ul li:hover ul {
   display: inline-block;
   opacity: 1;
   visibility: visible;
+}
+
+.f-dropdown h3 {
+  display: block;
+}
+
+.f-dropdown li {
+    width:25% !important;
+    display: inline-block;
+}
+.f-dropdown li a {
+
+}
+
+.img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.circle
+{
+width:200px;
+height:200px;
+border-radius:50%;
+font-size:30px;
+color:#000;
+line-height:200px;
+text-align:center;
+background:#000
 }
