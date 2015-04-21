@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :find_entry, only: [:show, :edit, :update, :destroy]
+  before_action :find_article, only: [:show, :edit, :update, :destroy]
 
   before_action :authenticate_user!
 
@@ -41,8 +41,8 @@ class ArticlesController < ApplicationController
     end
 
     # METHOD - FIND SPEC ENTRY
-    def find_entry
-      @entry = Entry.find(params[:id])
+    def find_article
+      @article = Article.find(params[:id])
     end
 
 

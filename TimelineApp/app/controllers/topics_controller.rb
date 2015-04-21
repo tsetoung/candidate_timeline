@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-before_action :find_entry, only: [:show, :edit, :update, :destroy]
+before_action :find_topic, only: [:show, :edit, :update, :destroy]
 
 before_action :authenticate_user!
 
@@ -38,9 +38,7 @@ before_action :authenticate_user!
 	private
 
 	# METHOD - FIND SPEC ENTRY
-	def find_entry
-		@entry = Entry.find(params[:id])
+	def find_topic
+		@topic = Topic.find(params[:id])
 	end
 end
-
-
