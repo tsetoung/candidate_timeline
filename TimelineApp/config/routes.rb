@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users
-  root 'candidates#index'
-  
+  root 'welcome#index'
+
   resources :candidates do
   resources :articles
   end
-  
+
   resources :topics do
   resources :articles
   end

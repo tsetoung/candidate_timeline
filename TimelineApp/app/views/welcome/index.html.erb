@@ -1,34 +1,40 @@
 <main>
 	<nav>
+		<div class="row">
+			<div class="small-3 column"></div>
+			<div class="small-4 column">
 		<ul>
 			<li><h2>Candidates</h2>
 					<ul>
-						<li><h3><a href="">Democrats</a></h3></li>
-						<li><a href="">Hillary Clinton</a></li>
+						<li><h3><a href="/candidates/<%= @democrats %>">Democrats</a></h3></li>
+						<li><a href="/candidates/1">Hillary Clinton</a></li>
 						<li>Jim Webb</li>
 						<li>Lincoln Chafee</li>
 						<li>Martin O'Malley</li>
-						<li><h3><a href="">Republicans</a></h3></li>
+						<li><h3><a href="/candidates/<%= @republicans %>">Republicans</a></h3></li>
 						<li>Chris Christie</li>
 						<li>Jeb Bush</li>
 						<li>Marco Rubio</li>
-						<li><a href="">Rand Paul</a></li>
+						<li><a href="/candidates/2">Rand Paul</a></li>
 						<li>Rick Perry</li>
 						<li>Scott Walker</li>
 						<li>Ted Cruz</li>
-						<li><h3><A href="">Independent</a></h3></li>
-						<li>Bernie Sanders</li>
+						<li><h3>Independent</h3></li>
+						<li><a href="/candidates/3">Bernie Sanders</a></li>
 					</ul>
 				</li>
 		</ul>
+	</div>
+		<div class="small-4 column">
 		<ul>
 			<li><h2>Topics</h2>
 					<ul>
-						<li>Civil Rights</li>
-						<li>Economy</li>
+						<li><a href="/topics/4">Civil Rights</a></li>
+						<li><a href="/topics/5">Economy</a></li>
+						<li><a href="topics/2">Education</a></li>
 						<li>Environment</li>
-						<li>Gun Control</li>
-						<li>Healthcare</li>
+						<li><a href="/topics/1">Gun Control</a></li>
+						<li><a href="/topics/3">Healthcare</a></li>
 						<li>Infrastructure</li>
 						<li>LGBT+ Issues</li>
 						<li>Trade</li>
@@ -36,6 +42,11 @@
 					</ul>
 				</li>
 		</ul>
+		<div class="small-3 column"></div>
+	</div>
 	</nav>
+	<div class="row">
+	<div class="small-12 column">
 	<div class="timeline">TIMELINE</div>
+	</div>
 </main>

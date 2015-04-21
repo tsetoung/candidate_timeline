@@ -13,11 +13,10 @@ candidate = Candidate.create([
 
 topic = Topic.create([
   {name: "gun control"},
-  {name: "second amendment rights"},
   {name: "education"},
-  {name: "leave no children behind"}
   {name: "healthcare"},
-  {name: "Obamacare"}
+  {name: "civil rights"},
+  {name: "economy"}
   ])
 
 article = Article.create([
