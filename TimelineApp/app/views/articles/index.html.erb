@@ -6,9 +6,10 @@
 <% end %>
 
 <ul>
-  <% @articles.each do |article| %>
+  <% @articles.each do |x| %>
     <li>
-       <%= link_to article.title, article.candidate %>
+       <%= x.title %>
     </li>
   <% end %>
 </ul>
+
