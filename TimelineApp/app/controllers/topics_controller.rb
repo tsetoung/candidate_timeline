@@ -42,4 +42,3 @@ before_action :authenticate_user!
 		@topic = Topic.find(params[:id])
 	end
 end
-end
