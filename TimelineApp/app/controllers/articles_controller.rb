@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
   before_action :authenticate_user!
 
   	def index
-  		@articles = Article.all
+      @candidate = Candidate.find(params[:id])
+      @articles = @candidate.articles.all
   	end
 
     def new
@@ -12,7 +13,8 @@ class ArticlesController < ApplicationController
   	end
 
   	def show
-
+      @candidate = Candidate.find(params[:id])
+      @article = @candidate.article.find(params[:id])
   	end
 
   	def edit
