@@ -12,7 +12,7 @@ before_action :authenticate_user!
 	end
 
 	def new
-		@topics = Topic.new
+		@topic = Topic.new
 	end
 
 	def edit
@@ -41,4 +41,6 @@ before_action :authenticate_user!
 	def find_topic
 		@topic = Topic.find(params[:id])
 	end
+end
+
 end
