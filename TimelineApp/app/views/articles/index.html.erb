@@ -8,7 +8,7 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
-       <%= link_to(candidate. article.title, article) %>
+       <%= link_to(article.title, article.candidate) %>
     </li>
   <% end %>
 </ul>
