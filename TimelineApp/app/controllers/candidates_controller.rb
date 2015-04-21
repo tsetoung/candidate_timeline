@@ -1,5 +1,5 @@
 class CandidatesController < ApplicationController
-  before_action :find_entry, only: [:show, :edit, :update, :destroy]
+  before_action :find_candidate, only: [:show, :edit, :update, :destroy]
 
   before_action :authenticate_user!
 
@@ -36,11 +36,14 @@ class CandidatesController < ApplicationController
 
   	private
 
-    def artist_params
+    def candidate_params
       return params[:candidate].permit(:name, :party)
     end
-    def find_entry
-      @entry = Entry.find(params[:id])
+   
+    private
+
+    def find_candidate
+      @candidate = Candidate.find(params[:id])
     end
 
 end

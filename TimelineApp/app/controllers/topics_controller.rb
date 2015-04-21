@@ -41,5 +41,6 @@ before_action :authenticate_user!
 	def find_entry
 		@entry = Entry.find(params[:id])
 	end
-
 end
+
+
