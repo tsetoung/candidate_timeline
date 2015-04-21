@@ -23,6 +23,7 @@ before_action :authenticate_user!
 		@topic = Topic.new(topic_params)
 		if @topic.save
 			redirect_to @topic
+		end
 	end
 
 	def update
