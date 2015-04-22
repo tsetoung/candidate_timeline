@@ -47,6 +47,10 @@
   width:40%;
 }
 
+.candidate a, a:visited {
+  display: inline;
+}
+
 img {
   max-width: 200px;
   max-height: 200px;
@@ -75,3 +79,9 @@ background:#000
   color: #fff;
   font-size: 2rem;
   top: 19px; }
+
+  .reveal-modal, h2, h3 {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+  }
