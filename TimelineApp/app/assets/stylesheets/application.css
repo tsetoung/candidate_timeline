@@ -16,19 +16,18 @@
 
  */
 
-h3 {
-  font-size: 20px;
-  color: #111;
-}
+ header {
+   font-size: 16px;
+   background: #000;
+ }
 
-li h3 {
-	display: block;
-  width: 300px;
-}
+ nav {
+   margin-top: 10%;
+ }
 
 ul {
   text-align: left;
-  display: inline;
+  /*display: inline;*/
   margin: 0;
   padding: 15px 4px 17px 0;
   list-style: none;
@@ -36,13 +35,12 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 ul li {
   font: bold 12px/18px sans-serif;
-  display: inline-block;
   margin-right: -4px;
   position: relative;
   padding: 15px 20px;
@@ -78,29 +76,30 @@ ul li ul {
   -transition: opacity 0.2s;
 }
 ul li ul li {
-
-  display: inline-block;
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
 
-ul li ul li:hover { background: #666; }
+ul li ul li:hover {
+  background:
+  #666;
+  }
+
 ul li:hover ul {
-  display: inline-block;
+
   opacity: 1;
   visibility: visible;
 }
 
-.f-dropdown h3 {
+.party {
   display: block;
 }
 
 .f-dropdown li {
-    width:25% !important;
-    display: inline-block;
+    width:25%;
 }
-.f-dropdown li a {
-
+.candidate {
+  display: inline-block;
 }
 
 .img {
