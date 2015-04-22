@@ -21,23 +21,25 @@
 </head>
 
   <body>
-  <header>
-    <div class="row">
-      <div class="small-2 column">
-        <%= link_to 'Candidates', candidates_path %>
-      </div>
-      <div class="small-2 column">
-        <%= link_to 'Topics', topics_path %>
-      </div>
-      <div class="small-2 column">
-        <%= link_to 'Articles' %>
-      </div>
-      <div class="small-4 column"></div>
-      <div class="small-2 column">
-        <%= link_to 'Signout', destroy_user_session_path, :method => :delete %>
+    <div class="topbar">
+      <div class="row">
+        <div class="small-11 column">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><%= link_to 'Candidates', candidates_path %></li>
+            <li><%= link_to 'Topics', topics_path %></li>
+            <li><%= link_to 'Articles' %></li>
+          </ul>
+        </div>
+        <div class="small-1 column">
+          <ul>
+            <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </header>
+
+
     <%= yield %>
 
     <script src="js/vendor/jquery.js"></script>
