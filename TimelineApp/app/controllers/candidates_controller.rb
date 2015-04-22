@@ -1,7 +1,7 @@
 class CandidatesController < ApplicationController
   before_action :find_candidate, only: [:show, :edit, :update, :destroy]
 
-  before_action :authenticate_user!
+
 
   	def index
   		@candidates = Candidate.all
@@ -39,7 +39,7 @@ class CandidatesController < ApplicationController
     def candidate_params
       return params[:candidate].permit(:name, :party)
     end
-   
+
     private
 
     def find_candidate
