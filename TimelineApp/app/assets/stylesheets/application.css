@@ -14,36 +14,11 @@
  *= require_self
  *= require foundation_and_overrides
 
-
-
 */
 
  nav {
    margin-top: 10%;
  }
-/*
-  a:hover {
-    color: #fff;
-  }
-  .content
-  {
-    height: 396px;
-    background: #fbfbfb;
-  }
-
-ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}*/
 
 .topbar {
   width: 100%;
@@ -60,26 +35,28 @@ ul {
   display: block;
 }
 
-.f-dropdown li {
-    width:25%;
-}
-.candidate {
-  display: inline-block;
+.f-dropdown ul {
+    width: 20%;
 }
 
-.img {
+.candidate {
+  display: inline;
+  width:40%;
+}
+
+img {
   max-width: 200px;
   max-height: 200px;
 }
 
 .circle
 {
-width:200px;
-height:200px;
+width:150px;
+height:150px;
 border-radius:50%;
-font-size:30px;
+font-size:26px;
 color:#000;
-line-height:200px;
+line-height:150px;
 text-align:center;
 background:#000
 }
