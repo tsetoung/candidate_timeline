@@ -1466,4 +1466,18 @@ $f-dropdown-max-width: 300px;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
 
+.alert-box.info {
+  border: 3px solid #3498DB;
+  border-radius: 5px;
+  color: #fff;
+  background-color:rgba(0, 0, 255, 0.4);
+}
+.alert-box.close {
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    top: 19px
+}
+
+
 @import 'foundation';

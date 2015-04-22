@@ -14,17 +14,22 @@
  *= require_self
  *= require foundation_and_overrides
 
- */
 
-h3 {
-  font-size: 20px;
-  color: #111;
-}
 
-li h3 {
-	display: block;
-  width: 300px;
-}
+*/
+
+ nav {
+   margin-top: 10%;
+ }
+/*
+  a:hover {
+    color: #fff;
+  }
+  .content
+  {
+    height: 396px;
+    background: #fbfbfb;
+  }
 
 ul {
   text-align: left;
@@ -36,71 +41,29 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}*/
+
+.topbar {
+  width: 100%;
+  background: #000;
 }
 
-ul li {
-  font: bold 12px/18px sans-serif;
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 15px 20px;
-  background: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-ul li:hover {
-  background: #555;
+.topbar li {
   color: #fff;
-}
-ul li ul {
-  background: #555;
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 300px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-ul li ul li {
-
-  display: inline-block;
-  color: #fff;
-  text-shadow: 0 -1px 0 #000;
+  background: #000;
 }
 
-ul li ul li:hover { background: #666; }
-ul li:hover ul {
-  display: inline-block;
-  opacity: 1;
-  visibility: visible;
-}
-
-.f-dropdown h3 {
+.party {
   display: block;
 }
 
 .f-dropdown li {
-    width:25% !important;
-    display: inline-block;
+    width:25%;
 }
-.f-dropdown li a {
-
+.candidate {
+  display: inline-block;
 }
 
 .img {
@@ -119,3 +82,15 @@ line-height:200px;
 text-align:center;
 background:#000
 }
+
+.alert-box.info {
+  border: 3px solid #3498DB;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+  .alert-box .close {
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  top: 19px; }
