@@ -12,7 +12,5 @@
   <tr>
     <td><%=@candidate.party%></td>
     <td><%=@candidate.candidacy%></td>
-    <td><%=@candidate.twitter%></td>
+    <td><a href="<%= @candidate.twitter %>"><%= @candidate.twitter_handle %></a></td>
   </tr>
-
-#link to twitter page

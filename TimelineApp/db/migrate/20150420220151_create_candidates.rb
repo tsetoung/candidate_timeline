@@ -6,6 +6,7 @@ class CreateCandidates < ActiveRecord::Migration
     	t.string :candidacy
     	t.string :img_url
     	t.string :twitter
+      t.string :twitter_handle
     end
   end
 end

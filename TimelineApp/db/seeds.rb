@@ -6,9 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 candidate = Candidate.create([
-  {name: "Hillary Clinton", party: "Democratic", candidacy: "declared", img_url: "http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg/819px-Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg", twitter: "https://twitter.com/hillaryclinton"},
-  {name: "Rand Paul", party: "Republican", candidacy: "declared", img_url: "http://upload.wikimedia.org/wikipedia/commons/7/78/Rand_Paul,_official_portrait,_112th_Congress_alternate.jpg", twitter: "https://twitter.com/randpaul"},
-  {name: "Bernie Sanders", party: "Independent", candidacy: "not declared", img_url: "http://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg", twitter: "https://twitter.com/sensanders"}
+  {name: "Hillary Clinton", party: "Democratic", candidacy: "declared", img_url: "http://rosscalloway.com/wp-content/uploads/hillary_clinton_3.jpg", twitter: "https://twitter.com/hillaryclinton", twitter_handle: "@HillaryClinton"},
+  {name: "Rand Paul", party: "Republican", candidacy: "declared", img_url: "http://conservativeread.com/wp-content/uploads/2014/03/randpaul_small.jpg", twitter: "https://twitter.com/randpaul", twitter_handle: "@Randpaul"},
+  {name: "Bernie Sanders", party: "Independent", candidacy: "not declared", img_url: "http://www.ontheissues.org/pictures/Bernie_Sanders.jpg", twitter: "https://twitter.com/sensanders", twitter_handle: "@SenSanders"}
   ])
 
 topic = Topic.create([

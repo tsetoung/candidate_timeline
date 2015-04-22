@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20150421135754) do
     t.string "candidacy"
     t.string "img_url"
     t.string "twitter"
+    t.string "twitter_handle"
   end
 
   create_table "topics", force: :cascade do |t|
