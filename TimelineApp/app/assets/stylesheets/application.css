@@ -16,6 +16,8 @@
 
 */
 
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
  nav {
    margin-top: 10%;
  }
@@ -24,6 +26,7 @@
   width: 100%;
   background: #000;
   height: 7%;
+  font-family: 'Muli', sans-serif;
 }
 
 .topbar li {
