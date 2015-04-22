@@ -20,7 +20,7 @@
   <body>
     <div class="topbar">
       <div class="row">
-        <div class="small-11 column">
+        <div class="small-10 column">
           <ul>
             <li><a href="/">Home</a></li>
             <li><%= link_to 'Candidates', candidates_path %></li>
@@ -28,9 +28,18 @@
             <li><%= link_to 'Articles', articles_path %></li>
           </ul>
         </div>
-        <div class="small-1 column">
+        <div class="small-2 column">
           <ul>
-            <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li>
+            <li>
+              <% if user_signed_in? %>
+                <%= current_user.email %>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+              <% else %>
+                <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+                <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+              <% end %>
+            <!-- <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li> -->
+            </li>
           </ul>
         </div>
       </div>
