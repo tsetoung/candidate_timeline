@@ -1,7 +1,11 @@
 <main>
 
-
-<!-- <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Candidates</button><br> -->
+	<div id="myModal" class="reveal-modal" data-reveal>
+	  <h2>Candidate Timeline</h2>
+		<h3>Presidential Primaries 2016</h3>
+	  <p class="lead">See what issues the candidates have been talking about, when. Drag and drop on the blank timeline to build your own with the issues you care about most.</p>
+	  <a class="close-reveal-modal">&#215;</a>
+	</div>
 
 <nav>
 	<div class="row">
@@ -18,7 +22,7 @@
 					<li class="candidate">Martin O'Malley</li>
 				</ul>
 				<br>
-				<li><a href="/candidates/<%= @republicans %>">Republicans</a></li><br>
+				<li><a href="/candidates/<%= @republicans %>"><h3>Republicans</h3></a></li><br>
 					<li>Chris Christie</li>
 					<li>Jeb Bush</li>
 					<li>Marco Rubio</li>
@@ -31,7 +35,9 @@
 					<li><a href="/candidates/3">Bernie Sanders</a></li>
 			</ul>
 		</div>
-  	<div class="small-2 large-4 columns"></div>
+  	<div class="small-2 large-4 columns">
+				<%= image_tag "timeline-jiahuang.png" %>
+			</div>
   	<div class="small-2 large-4 columns">
 			<div class="circle"><a href="#" data-dropdown="hover2" data-options="is_hover:true; hover_timeout:3000">Topics</a></div>
 			<ul id="hover2" data-options="align:left" class="f-dropdown" data-dropdown-content>
