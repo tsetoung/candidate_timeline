@@ -18,6 +18,7 @@
 </head>
 
   <body>
+
     <div class="topbar">
       <div class="row">
         <div class="small-6 column">
@@ -36,10 +37,16 @@
                 <%= current_user.email %>
                 <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
               <% else %>
-                <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-                <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                <a href="#" data-reveal-id="signin-modal">Sign In/Sign Up</a>
+                <div id="signin-modal" class="reveal-modal" data-reveal>
+                  <%= render "/login_forms/signin" %>
+                  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+                <div id="signup-modal" class="reveal-modal" data-reveal>
+                  <%= render "/login_forms/signup" %>
+                  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
               <% end %>
-            <!-- <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li> -->
             </li>
           </ul>
         </div>
