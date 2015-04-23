@@ -14,6 +14,11 @@ class CandidatesController < ApplicationController
   	def show
       @candidate = Candidate.find(params[:id])
       @articles = @candidate.articles.all
+      @healthcare = @articles.where(topic: 3)
+      @guncontrol = @articles.where(topic: 1)
+      @education = @articles.where(topic: 2)
+      @civilrights = @articles.where(topic: 4)
+      @economy = @articles.where(topic: 5)
   	end
 
   	def edit
