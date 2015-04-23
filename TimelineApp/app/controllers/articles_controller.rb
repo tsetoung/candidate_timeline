@@ -13,7 +13,6 @@ class ArticlesController < ApplicationController
 
   	def show
       @candidate = Candidate.find(params[:id])
-      @article = @candidate.article.find(params[:id])
   	end
 
   	def edit
@@ -35,13 +34,13 @@ class ArticlesController < ApplicationController
   		redirect_to article_url
   	end
 
-  	private
+
+    private
 
     def article_params
       return params[:article].permit(:title, :url, :date)
     end
 
-    # METHOD - FIND SPEC ENTRY
     def find_article
       @article = Article.find(params[:id])
     end
