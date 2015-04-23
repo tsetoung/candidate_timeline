@@ -26,3 +26,13 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+APP Overview:
+This App allows people to inform themselves on the fast pace data that involves
+presidential elections.  We have discovered that many voters are misinformed about a
+particular candidate's political stance on various issues.
+
+APP Technical Specs:
+1.  Ruby version: 4.0
+2.  PSQL
+3.  

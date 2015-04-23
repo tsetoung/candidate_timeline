@@ -9,36 +9,32 @@
 
 <nav>
 	<div class="row">
-		<div class="small-2 large-4 columns">
+		<div class="small-3 columns">
 			<div class="circle">
 				<a href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:3000">Candidates</a>
 			</div>
-			<ul id="hover1" data-options="align:left" class="f-dropdown" data-dropdown-content>
-			  <li><a href="#" class="party"><h3>Democrats</h3></a></li><br>
-					<ul>
-				  <li><a href="/candidates/1" class="candidate">Hillary Clinton</a></li>
-					<li class="candidate">Jim Webb</li>
-					<li class="candidate">Lincoln Chafee</li>
-					<li class="candidate">Martin O'Malley</li>
-				</ul>
-				<br>
-				<li><a href="/candidates/<%= @republicans %>"><h3>Republicans</h3></a></li><br>
-					<li>Chris Christie</li>
-					<li>Jeb Bush</li>
-					<li>Marco Rubio</li>
-					<li><a href="/candidates/2">Rand Paul</a></li>
-					<li>Rick Perry</li>
-					<li>Scott Walker</li>
-					<li>Ted Cruz</li>
-				<br>
-				<li><h3>Independent</h3></li><br>
-					<li><a href="/candidates/3">Bernie Sanders</a></li>
+			<ul id="hover1" data-options="align:center" class="f-dropdown" data-dropdown-content>
+			  <li class="party"><a href="#"><h3>Democrats</h3></a></li>
+					  <li class="candidate"><a href="/candidates/1">Hillary Clinton</a></li>
+						<li class="candidate">Jim Webb</li>
+						<li class="candidate">Lincoln Chafee</li>
+						<li class="candidate">Martin O'Malley</li>
+				<li class="party"><a href="/candidates/<%= @republicans %>"><h3>Republicans</h3></a></li>
+						<li class="candidate">Chris Christie</li>
+						<li class="candidate">Jeb Bush</li>
+						<li class="candidate">Marco Rubio</li>
+						<li class="candidate"><a href="/candidates/2">Rand Paul</a></li>
+						<li class="candidate">Rick Perry</li>
+						<li class="candidate">Scott Walker</li>
+						<li class="candidate">Ted Cruz</li>
+				<li class="party"><h3>Independent</h3></li>
+						<li class="candidate"><a href="/candidates/3">Bernie Sanders</a></li>
 			</ul>
 		</div>
-  	<div class="small-2 large-4 columns">
+  	<div class="small-6 columns">
 				<%= image_tag "timeline-jiahuang.png" %>
 			</div>
-  	<div class="small-2 large-4 columns">
+  	<div class="small-3 columns">
 			<div class="circle"><a href="#" data-dropdown="hover2" data-options="is_hover:true; hover_timeout:3000">Topics</a></div>
 			<ul id="hover2" data-options="align:left" class="f-dropdown" data-dropdown-content>
 				<li>Education</li>

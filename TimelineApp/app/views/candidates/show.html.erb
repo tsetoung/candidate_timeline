@@ -1,7 +1,7 @@
-<h2><%=image_tag @candidate.img_url%></h2>
-<h3><%=@candidate.name%></h3>
-
-
+<div class="basic-info">
+  <h2 class="image"><%=image_tag @candidate.img_url%></h2>
+  <h3 class="name"><%=@candidate.name%></h3>
+</div>
 
 <table style="width:100%">
   <tr>
@@ -13,10 +13,67 @@
     <td><%=@candidate.party%></td>
     <td><%=@candidate.candidacy%></td>
     <td><a href="<%= @candidate.twitter %>"><%= @candidate.twitter_handle %></a></td>
-  </tr><br><br>
+  </tr>
+</table>
+<div class="topics">
+  <ul class="tabs" data-tab role="tablist">
+    <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Healthcare</a></li>
+    <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Gun Control</a></li>
+    <li class="tab-title" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Economy</a></li>
+    <li class="tab-title" role="presentational" ><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Civil Rights</a></li>
+    <li class="tab-title" role="presentational" ><a href="#panel2-5" role="tab" tabindex="0" aria-selected="false" controls="panel2-5">Education</a></li>
+  </ul>
+  <div class="tabs-content">
+    <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+      <ul class="articles">
+        <% @healthcare.each do |article| %>
+          <li>
+            <a href="<%= article.url %>"> <%= article.title %></a>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+      <ul class="articles">
+      <% @guncontrol.each do |article| %>
+        <li>
+          <a href="<%= article.url %>"> <%= article.title %></a>
+        </li>
+      <% end %>
+      </ul>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+      <ul class="articles">
+      <% @economy.each do |article| %>
+        <li>
+          <a href="<%= article.url %>"> <%= article.title %></a>
+        </li>
+      <% end %>
+      </ul>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
+      <ul class="articles">
+      <% @civilrights.each do |article| %>
+        <li>
+          <a href="<%= article.url %>"> <%= article.title %></a>
+        </li>
+      <% end %>
+      </ul>
+    </section>
+    <section role="tabpanel" aria-hidden="true" class="content" id="panel2-5">
+      <ul class="articles">
+      <% @education.each do |article| %>
+        <li>
+          <a href="<%= article.url %>"> <%= article.title %></a>
+        </li>
+      <% end %>
+      </ul>
+    </section>
+  </div>
+</div>
 
 
-  <h4>HEALTHCARE:</h4>
+  <!-- <h4>HEALTHCARE:</h4>
   <ul>
   <% @healthcare.each do |article| %>
     <li>
@@ -55,4 +112,4 @@
       <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-  </ul><br><br>
+  </ul><br><br> -->
