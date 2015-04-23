@@ -1,10 +1,51 @@
 <h2>Articles</h2>
 
-<ul>
-  <% @articles.each do |article| %>
+
+  <h4>HEALTHCARE:</h4>
+  <ul>
+  <% @healthcare.each do |article| %>
     <li>
-      <a href="<%= article.url %>"><%= article.title %></a>
+      <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-</ul>
+  </ul><br><br>
 
+
+  <h4>GUN CONTROL:</h4>
+  <ul>
+  <% @guncontrol.each do |article| %>
+    <li>
+      <a href="<%= article.url %>"> <%= article.title %></a>
+    </li>
+  <% end %>
+  </ul><br><br>
+
+
+  <h4>ECONOMY:</h4>
+  <ul>
+  <% @economy.each do |article| %>
+    <li>
+      <a href="<%= article.url %>"> <%= article.title %></a>
+    </li>
+  <% end %>
+  </ul><br><br>
+
+
+  <h4>CIVIL RIGHTS:</h4>
+  <ul>
+  <% @civilrights.each do |article| %>
+    <li>
+      <a href="<%= article.url %>"> <%= article.title %></a>
+    </li>
+  <% end %>
+  </ul><br><br>
+
+
+  <h4>EDUCATION:</h4>
+  <ul>
+  <% @education.each do |article| %>
+    <li>
+      <a href="<%= article.url %>"> <%= article.title %></a>
+    </li>
+  <% end %>
+  </ul><br><br>
