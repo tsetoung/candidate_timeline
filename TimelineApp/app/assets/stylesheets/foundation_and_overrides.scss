@@ -127,7 +127,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: #555;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -259,7 +259,8 @@ $paragraph-margin-bottom: 0;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+$anchor-font-color-hover: #fff;
+// scale-color($anchor-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -275,7 +276,7 @@ $list-line-height: 0;
 // $list-style-position: outside;
 $list-side-margin: 0;
 $list-ordered-side-margin: 0;
-// $list-side-margin-no-bullet: 0;
+$list-side-margin-no-bullet: 0;
 $list-nested-margin: 0;
 // $definition-list-header-weight: $font-weight-bold;
 $definition-list-header-margin-bottom: 0;
@@ -519,18 +520,18 @@ $microformat-margin: 0;
 // $include-html-dropdown-classes: $include-html-classes;
 
 // We use these to controls height and width styles.
-$f-dropdown-max-width: 500px;
+$f-dropdown-max-width: 600px;
 // $f-dropdown-height: auto;
 // $f-dropdown-max-height: none;
 
 // Used for bottom position
-$f-dropdown-margin-top: 0px;
+$f-dropdown-margin-top: 3px;
 
 // Used for right position
 // $f-dropdown-margin-left: $f-dropdown-margin-top;
 
 // Used for left position
-// $f-dropdown-margin-right: $f-dropdown-margin-top;
+$f-dropdown-margin-right: 20px;
 
 // Used for top position
 // $f-dropdown-margin-bottom: $f-dropdown-margin-top;
@@ -553,14 +554,12 @@ $f-dropdown-margin-top: 0px;
 // $f-dropdown-font-color: $charcoal;
 // $f-dropdown-font-size: rem-calc(14);
 $f-dropdown-list-padding: 0;
-// rem-calc(5, 10)
-// $f-dropdown-line-height: rem-calc(18);
-// $f-dropdown-list-hover-bg: $smoke;
+$f-dropdown-line-height: 0;
+$f-dropdown-list-hover-bg: #fff;
 // $dropdown-mobile-default-float: 0;
 
 // We use this to control the styles for when the dropdown has custom content.
 $f-dropdown-content-padding: 0;
-// rem-calc(20)
 // Default radius for dropdown.
 // $f-dropdown-radius: $global-radius;
 

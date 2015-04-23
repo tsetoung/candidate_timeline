@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20150421135754) do
     t.string  "title"
     t.string  "url"
     t.string  "date"
-    t.integer "candidate_id"
     t.integer "topic_id"
+    t.integer "candidate_id"
   end
 
   create_table "candidates", force: :cascade do |t|
