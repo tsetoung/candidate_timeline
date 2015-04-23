@@ -16,10 +16,19 @@
 
 */
 
-@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+*
+{
+padding:0;
+margin:0;
+border:0;
+box-sizing:border-box;
+}
 
  nav {
    margin-top: 10%;
+   text-align: center;
  }
 
 .topbar {
@@ -36,20 +45,53 @@
 
 .party {
   display: block;
+  width: 100%;
+
 }
 
-.f-dropdown ul {
-    width: 20%;
+/*.f-dropdown ul {
+  width: 600px;
+}*/
+
+ul>ul {
+  border:0;
 }
 
-.candidate {
-  display: inline;
-  width:40%;
+/*nav h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}*/
+
+nav ul {
+  width: 100%;
+}
+
+ul li {
+  /*border: 1px solid yellow;*/
+}
+
+
+
+.articles li {
+  border: 1px solid #222;
+}
+
+/*.candidate {
+  display: inline-block;
+  width:140px;;
+  line-height:12px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid blue;
 }
 
 .candidate a, a:visited {
-  display: inline;
-}
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}*/
 
 img {
   max-width: 200px;
@@ -80,7 +122,7 @@ background:#000
   font-size: 2rem;
   top: 19px; }
 
-  .reveal-modal, h2, h3 {
+  .reveal-modal, .reveal-modal h2, .reveal-modal h3 {
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     text-align: center;
