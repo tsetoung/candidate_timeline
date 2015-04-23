@@ -13,4 +13,14 @@
     <td><%=@candidate.party%></td>
     <td><%=@candidate.candidacy%></td>
     <td><a href="<%= @candidate.twitter %>"><%= @candidate.twitter_handle %></a></td>
-  </tr>
+  </tr><br><br>
+
+
+
+  <ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="<%= article.url %>"> <%= article.title %></a>
+    </li>
+  <% end %>
+  </ul>
