@@ -1,11 +1,11 @@
 == README
 
 === Purpose
-This was created as a prototype for a political timeline app, focused on the **2016 Presidential Elections**. While the specifics of what a candidate says are always important, oftentimes knowing the topics they are talking about, and how often, is also telling. This app would display a timeline for candidates, showing the issues they're publicly addressing, and when. Users could view timelines for one specific candidate, or choose to compare timelines so they could see when someone might be reacting to another candidate's words.
+This was created as a prototype for a political timeline app, focused on the 2016 Presidential Elections. While the specifics of what a candidate says are always important, oftentimes knowing the topics they are talking about, and how often, is also telling. This app would display a timeline for candidates, showing the issues they're publicly addressing, and when. Users could view timelines for one specific candidate, or choose to compare timelines so they could see when someone might be reacting to another candidate's words.
 
 === Getting Started
 1. Fork and clone this repo
-2. Run ```bundle install``` from inside the app in your terminal
+2. Run ``` bundle install ``` from inside the app in your terminal
 3. Run ```rake db: create``` and ``` rake db:migrate ```, followed by ``` rake db:seed``` if you wish to use the seed file
 4. Run ```rails server``` then go to localhost:3000 in your browser
 
