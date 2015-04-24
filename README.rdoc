@@ -5,7 +5,7 @@ This was created as a prototype for a political timeline app, focused on the 201
 
 === Getting Started
 1. Fork and clone this repo
-2. Run ```bundle install``` from inside the app in your terminal
+2. Run bundle install from inside the app in your terminal
 3. Run rake db: create and rake db:migrate, followed by rake db:seed if you wish to use the seed file
 4. Run rails server then go to localhost:3000 in your browser
 
@@ -15,4 +15,4 @@ Our User Stories can be found here: https://trello.com/b/DvuoBMqh/candidate-time
 These User Stories helped us define what the app needed to do and in which order to build those important aspects that we could in the short time we had to work on it.
 
 === Functions
-The homepage allows you to choose by candidate or topic, and to see the overall index pages for candidate and topic. Each candidate page features information on the candidate and curated articles sorted by topic. It is also possible, from the articles index, to search a database of articles for ones that are not readily available from the app.
+The homepage allows you to choose by candidate or topic, and to see the overall index pages for candidate and topic. Each candidate page features information on the candidate and curated articles sorted by topic. It is also possible, from the articles index, to search a database of articles for ones that are not readily available from the app. Logging in and saving a session is also possible.
