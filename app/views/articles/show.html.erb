@@ -1,9 +1,9 @@
-<% @results.each do |time| %>
-    <div>
-      <ul>
-    <li>Article Snippet: <%= time["snippet"] %><br>
-        Article Abstract: <%= time["abstract"] %>
-        <%= link_to "Link to Article", time["web_url"] %></li>
-      </ul>
-    </div>
-<% end %>
+<h2>Results:</h2>
+  <table>
+    <% @results.each do |time| %>
+    <tr>
+      <td><strong>Snippet:</strong> <%= time["snippet"] %></td>
+      <td class="row_link"><%= link_to "Link to Article", time["web_url"] %></td>
+    </tr>
+    <% end %>
+  </table>
