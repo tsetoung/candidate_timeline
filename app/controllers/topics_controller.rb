@@ -15,26 +15,26 @@ before_action :find_topic, only: [:show, :edit, :update, :destroy]
 		@topic = Topic.new
 	end
 
-	def edit
-
-	end
-
-	def create
-		@topic = Topic.new(topic_params)
-		if @topic.save
-			redirect_to @topic
-		end
-	end
-
-	def update
-		@topic.update(topic_params)
-		redirect_to "/topics"
-	end
-
-	def destroy
-		@topic.destroy
-		redirect_to topics_path
-	end
+	# def edit
+	#
+	# end
+	#
+	# def create
+	# 	@topic = Topic.new(topic_params)
+	# 	if @topic.save
+	# 		redirect_to @topic
+	# 	end
+	# end
+	#
+	# def update
+	# 	@topic.update(topic_params)
+	# 	redirect_to "/topics"
+	# end
+	#
+	# def destroy
+	# 	@topic.destroy
+	# 	redirect_to topics_path
+	# end
 
 	private
 
