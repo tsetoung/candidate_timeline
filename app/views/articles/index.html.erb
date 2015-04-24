@@ -2,55 +2,56 @@
 
 <%= form_tag "/articles/show", method: :get do %>
   <%= text_field_tag :nyt, nil, placeholder: "Search Topic of Interest" %>
-  <%= submit_tag "Search NYTimes" %>
+  <div class="submit"><%= submit_tag "Search NYTimes" %></div>
 <% end %>
 
-
-  <h4>HEALTHCARE:</h4>
+<div class="article_list">
+  <h3>HEALTHCARE:</h3>
   <ul>
   <% @healthcare.each do |article| %>
     <li>
       <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-  </ul><br><br>
+  </ul>
 
 
-  <h4>GUN CONTROL:</h4>
+  <h3>GUN CONTROL:</h3>
   <ul>
   <% @guncontrol.each do |article| %>
     <li>
       <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-  </ul><br><br>
+  </ul>
 
 
-  <h4>ECONOMY:</h4>
+  <h3>ECONOMY:</h3>
   <ul>
   <% @economy.each do |article| %>
     <li>
       <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-  </ul><br><br>
+  </ul>
 
 
-  <h4>CIVIL RIGHTS:</h4>
+  <h3>CIVIL RIGHTS:</h3>
   <ul>
   <% @civilrights.each do |article| %>
     <li>
       <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-  </ul><br><br>
+  </ul>
 
 
-  <h4>EDUCATION:</h4>
+  <h3>EDUCATION:</h3>
   <ul>
   <% @education.each do |article| %>
     <li>
       <a href="<%= article.url %>"> <%= article.title %></a>
     </li>
   <% end %>
-  </ul><br><br>
+  </ul>
+</div>
