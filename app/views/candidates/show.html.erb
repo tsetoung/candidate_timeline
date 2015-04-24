@@ -1,6 +1,14 @@
 <div class="basic-info">
-  <h2 class="image"><%=image_tag @candidate.img_url%></h2>
-  <h3 class="name"><%=@candidate.name%></h3>
+  <div class="row">
+    <div class="small-12 column">
+      <h2 class="image"><%=image_tag @candidate.img_url%></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 column">
+      <h3 class="name"><%=@candidate.name%></h3>
+    </div>
+  </div>
 </div>
 
 <table style="width:100%">
@@ -71,45 +79,3 @@
     </section>
   </div>
 </div>
-
-
-  <!-- <h4>HEALTHCARE:</h4>
-  <ul>
-  <% @healthcare.each do |article| %>
-    <li>
-      <a href="<%= article.url %>"> <%= article.title %></a>
-    </li>
-  <% end %>
-  </ul><br><br>
-  <h4>GUN CONTROL:</h4>
-  <ul>
-  <% @guncontrol.each do |article| %>
-    <li>
-      <a href="<%= article.url %>"> <%= article.title %></a>
-    </li>
-  <% end %>
-  </ul><br><br>
-    <h4>ECONOMY:</h4>
-  <ul>
-  <% @economy.each do |article| %>
-    <li>
-      <a href="<%= article.url %>"> <%= article.title %></a>
-    </li>
-  <% end %>
-  </ul><br><br>
-    <h4>CIVIL RIGHTS:</h4>
-  <ul>
-  <% @civilrights.each do |article| %>
-    <li>
-      <a href="<%= article.url %>"> <%= article.title %></a>
-    </li>
-  <% end %>
-  </ul><br><br>
-    <h4>EDUCATION:</h4>
-  <ul>
-  <% @education.each do |article| %>
-    <li>
-      <a href="<%= article.url %>"> <%= article.title %></a>
-    </li>
-  <% end %>
-  </ul><br><br> -->

@@ -18,12 +18,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Muli);
 
-*
-{
-padding:0;
-margin:0;
-border:0;
-box-sizing:border-box;
+* {
+  padding:0;
+  margin:0;
+  border:0;
+  box-sizing:border-box;
 }
 
  nav {
@@ -42,8 +41,6 @@ box-sizing:border-box;
   color: #fff;
   background: #000;
 }
-
-
 
 /*login/sign up modal*/
 
@@ -68,21 +65,18 @@ box-sizing:border-box;
 /*alert box*/
 
 .alert-box.info {
-    border: 3px solid #3498DB;
-    border-radius: 5px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+  border: 3px solid #3498DB;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  .alert-box .close {
-    background: transparent;
-    color: #fff;
-    font-size: 2rem;
-    top: 19px;
-  }
-
-
-
+.alert-box .close {
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  top: 19px;
+}
 
 /*front page hover menu*/
 
