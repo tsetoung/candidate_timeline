@@ -19,6 +19,7 @@ class CandidatesController < ApplicationController
       @education = @articles.where(topic: 2)
       @civilrights = @articles.where(topic: 4)
       @economy = @articles.where(topic: 5)
+      
   	end
 
   	def edit

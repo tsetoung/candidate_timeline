@@ -1,5 +1,24 @@
 <h2>Articles</h2>
 
+	<h4>ASDF</h4>
+	<ul>
+		<% @topic.each do |topic| %>
+			<li>
+			<%=topic.name%>
+			
+				<ul>
+					<% @candidate.each do |candidate| %>
+						<li>
+							<%=candidate.name%>
+						</li>
+				</ul>
+			</li>
+			
+	</ul>
+	<%end%>
+	
+
+
 
   <h4>HEALTHCARE:</h4>
   <ul>
