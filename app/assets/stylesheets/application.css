@@ -175,3 +175,33 @@ nav ul {
   border: 1px solid #222;
   padding: 6px;
 }
+
+.submit {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  float: right;
+  background-color: #C0C0C0;
+}
+
+.article_list {
+  padding: 5px;
+  margin: 10px;
+}
+
+.article_list h3 {
+  margin-top: 10px;
+}
+
+td {
+  padding: 0;
+}
+
+.row_title {
+  width: 15%;
+}
+
+.row_link {
+  width: 10%;
+}
