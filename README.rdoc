@@ -5,9 +5,9 @@ This was created as a prototype for a political timeline app, focused on the 201
 
 === Getting Started
 1. Fork and clone this repo
-2. Run bundle install from inside the app in your terminal
-3. Run rake db: create and rake db:migrate, followed by rake db:seed if you wish to use the seed file
-4. Run rails server then go to localhost:3000 in your browser
+2. Run `bundle install` from inside the app in your terminal
+3. Run `rake db: create` and `rake db:migrate`, followed by `rake db:seed` if you wish to use the seed file
+4. Run `rails server` then go to localhost:3000 in your browser
 
 === User Stories
 Our User Stories can be found here: https://trello.com/b/DvuoBMqh/candidate-timeline
