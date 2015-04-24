@@ -26,9 +26,13 @@ class CandidatesController < ApplicationController
   	end
 
   	def create
-  		@candidate = Candidate.create!(candidate_params)
-  		redirect_to @candidate
-  	end
+      @candidate = Candidate.new(candidate_params)
+        if @candidate.save
+          redirect_to(candidate_path(@candidate))
+        else
+      render(:new)
+      end
+    end
 
   	def update
   		@candidate.update(candidate_params)
