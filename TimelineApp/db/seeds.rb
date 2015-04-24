@@ -10,9 +10,9 @@ candidate = Candidate.create([
   ])
 
 topic = Topic.create([
-  {name: "gun control"},
-  {name: "education"},
-  {name: "healthcare"},
+  {name: "gun control", wiki_url: "https://en.wikipedia.org/wiki/Gun_control"},
+  {name: "education", wiki_url: "https://en.wikipedia.org/wiki/Education"},
+  {name: "healthcare", wiki_url: "https://en.wikipedia.org/wiki/Health_care"},
   {name: "civil rights"},
   {name: "economy"}
   ])

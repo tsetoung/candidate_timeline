@@ -1,5 +1,11 @@
 <h2>Articles</h2>
 
+<%= form_tag "/articles/show", method: :get do %>
+  <%= text_field_tag :nyt, nil, placeholder: "Search Topic of Interest" %>
+  <%= submit_tag "Search NYTimes" %>
+<% end %>
+
+
   <h4>HEALTHCARE:</h4>
   <ul>
   <% @healthcare.each do |article| %>

@@ -1,4 +1,9 @@
-<a href= "<%= @article.url %>" ></a>
-
-
-<%= @article.url %>
+<% @results.each do |time| %>
+    <div>
+      <ul>
+    <li>Article Snippet: <%= time["snippet"] %><br>
+        Article Abstract: <%= time["abstract"] %>
+        <%= link_to "Link to Article", time["web_url"] %></li>
+      </ul>
+    </div>
+<% end %>

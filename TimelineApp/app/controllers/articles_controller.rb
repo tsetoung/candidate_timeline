@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :find_article, only: [:show, :edit, :update, :destroy]
+  before_action :find_article, only: [:edit, :update, :destroy]
 
   before_action :authenticate_user!
 
@@ -17,7 +17,10 @@ class ArticlesController < ApplicationController
   	end
 
   	def show
-      @candidate = Candidate.find(params[:id])
+      search_term = params[:nyt]
+      key = ENV['nytimes_api_key']
+      nytimes = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=#{search_term}&api-key=#{key}")
+      @results = nytimes["response"]["docs"]
   	end
 
   	def edit
