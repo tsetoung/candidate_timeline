@@ -43,7 +43,29 @@ box-sizing:border-box;
   background: #000;
 }
 
+
+
+/*login/sign up modal*/
+
+#signin {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 50%;
+}
+
+.type {
+  color: #008CBA;
+}
+
 /*front page modal*/
+.reveal-modal, .reveal-modal h2, .reveal-modal h3 {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+}
+
+/*alert box*/
 
 .alert-box.info {
     border: 3px solid #3498DB;
@@ -59,11 +81,7 @@ box-sizing:border-box;
     top: 19px;
   }
 
-  .reveal-modal, .reveal-modal h2, .reveal-modal h3 {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-align: center;
-  }
+
 
 
 /*front page hover menu*/
